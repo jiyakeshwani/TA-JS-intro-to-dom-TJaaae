@@ -6,16 +6,24 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 1rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  padding: 0 auto;
 }
 .box {
   border: 2px solid #d6bcfa;
   height: 500px;
   border-radius: 10px;
 }
-h1,
-h2 {
+h1 {
   text-align: center;
+}
+li {
+  width: 30%;
 }
